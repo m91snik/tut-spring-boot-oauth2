@@ -8,8 +8,8 @@ security:
 
 facebook:
   client:
-    clientId: 233668646673605
-    clientSecret: 33b17e044ee6a4fa383f46ec6e28ea1d
+    clientId: 1742438739332745
+    clientSecret: d1b8f3eff99cfc6a7fdf0c66fa8c04c1
     accessTokenUri: https://graph.facebook.com/oauth/access_token
     userAuthorizationUri: https://www.facebook.com/dialog/oauth
     tokenName: oauth_token
@@ -17,15 +17,37 @@ facebook:
     clientAuthenticationScheme: form
   resource:
     userInfoUri: https://graph.facebook.com/me
+
 github:
   client:
-    clientId: bd1c0a783ccdd1c9b9e4
-    clientSecret: 1a9030fbca47a5b2c28e92f19050bb77824b5ad1
+    clientId: ad96a372956b0fa6d019
+    clientSecret: 353133cb14900a66f9f5814993c8be3cb51f64cf
     accessTokenUri: https://github.com/login/oauth/access_token
     userAuthorizationUri: https://github.com/login/oauth/authorize
     clientAuthenticationScheme: form
   resource:
     userInfoUri: https://api.github.com/user
+
+google:
+  client:
+    clientId:  416126932555-ip5u9u5c6f80c8t962okg2jik09eabfm.apps.googleusercontent.com
+    clientSecret:  Ll1jJigFJzzcsWrvG_sYYx5I
+    accessTokenUri: https://www.googleapis.com/oauth2/v4/token
+    userAuthorizationUri: https://accounts.google.com/o/oauth2/v2/auth?scope=https://www.googleapis.com/auth/userinfo.profile
+    clientAuthenticationScheme: form
+  resource:
+    userInfoUri: https://www.googleapis.com/oauth2/v1/userinfo
+
+vk:
+  client:
+    clientId:  5492009
+    clientSecret:  e1swcQWKNIUjumxr8jTU
+    accessTokenUri:  https://oauth.vk.com/access_token
+    userAuthorizationUri: https://oauth.vk.com/authorize?v=5.52
+    scope: email
+    clientAuthenticationScheme: form
+  resource:
+    userInfoUri: https://api.vk.com/method/users.get
 
 logging:
   level:
